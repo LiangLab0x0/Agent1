@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alien Communication 3D</title>
+  <style>
+    body { margin:0; overflow:hidden; font-family: sans-serif; }
+    #chat { position: absolute; top: 0; left: 0; width: 300px; height: calc(100% - 60px); background: rgba(255,255,255,0.8); padding: 10px; overflow-y: auto; }
+    #input-area { position: absolute; bottom: 0; left: 0; width: 300px; background: rgba(255,255,255,0.8); padding: 10px; }
+    #input-area input { width: 70%; }
+    #input-area button { width: 25%; }
+  </style>
+</head>
+<body>
+  <div id="chat"></div>
+  <div id="input-area">
+    <input type="text" id="message" placeholder="Say something..." />
+    <button id="send">Send</button>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
